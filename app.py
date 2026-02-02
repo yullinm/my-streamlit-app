@@ -34,4 +34,3 @@ if prompt := st.chat_input("메시지를 입력하세요"):
             )
             reply = response.choices[0].message.content
             st.markdown(reply)
-            st.session_state.messages.append({"role": "assistant", "content": reply})
